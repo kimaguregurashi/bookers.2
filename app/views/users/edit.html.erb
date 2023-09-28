@@ -5,7 +5,7 @@
   <div class="col-sm-12 col-md-8 col-lg-5 px-5 px-sm-0 mx-auto">
     <h2>User info</h2>
     <% if @user.errors.any? %>
-  <%= @user.errors.count %>errors prohibited this obj from being saved:
+  <h3><%= @user.errors.count %>errors prohibited this obj from being saved:</h3>
   <ul>
     <% @user.errors.full_messages.each do |message| %>
       <li><%= message %></li>
@@ -24,7 +24,7 @@
   </div>
   <div class="form-group">
   <label for="user_introduction">Introduction</label>
-  <%= f.text_field :name, autofocus: true, id:"textarea" %>
+  <%= f.text_field :introduction, autofocus: true, id:"textarea" %>
   </div>
   <div class="form-group">
   <%= f.submit "Update User" %>

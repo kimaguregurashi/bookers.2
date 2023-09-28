@@ -21,7 +21,7 @@
       
       <ul class="navbar-nav ml-auto">
     <% if user_signed_in? %>
-      <li class="fas fa-home" aria-hidden="true">
+        <li class="fas fa-home" aria-hidden="true">
          <%= link_to "Home", user_path(current_user.id) %>
       </li>
       <li class="fas fa-users" aria-hidden="true">
